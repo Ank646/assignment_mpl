@@ -11,12 +11,11 @@ router.get("/", async (req, res) => {
 
     const totalVideos = await Video.countDocuments(query); 
     const totalPages = Math.ceil(totalVideos / limit); 
-
     const videos = await Video.find(query)
       .sort({ publishedAt: -1 }) 
       .skip((page - 1) * limit) 
       .limit(limit); 
-
+console.log(videos);
     res.json({ success: true, count: videos.length, totalPages, videos });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
