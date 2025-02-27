@@ -15,7 +15,7 @@ function VideoCard({ video }) {
                 ? `${video.thumbnailUrl.replace("hqdefault", "maxresdefault")}`
                 : "https://via.placeholder.com/640x360"
             }
-            alt={video?.title || "No Title"}
+            alt={video?.title || "Noo Title"}
             className={`h-full w-full object-cover transition-opacity duration-300 ${
               imageLoaded ? "opacity-100" : "opacity-0"
             }`}
