@@ -43,6 +43,7 @@ export const AppContext = ({ children }) => {
   
       if (response.success) {
         console.log("Setting searchResult with new videos");
+        console.log("Getting.....")
         setSearchResult(response.videos); 
         setTotalPages(response.totalPages);
       }
