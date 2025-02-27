@@ -64,5 +64,4 @@ const fetchVideos = async () => {
     return [];
   }
 };
-
 module.exports = fetchVideos;
