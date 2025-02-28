@@ -19,7 +19,7 @@ export const AppContext = ({ children }) => {
 
   useEffect(() => {
     socket.on("new_video", (newVideo) => {
-      console.log("New video received:", newVideo);
+      console.log("New video received:");
       if (newVideo && newVideo.videoId) {
         setSearchResult((prevVideos) => {
           const updatedVideos = [newVideo, ...prevVideos]; 
