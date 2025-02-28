@@ -40,9 +40,9 @@
    npm run dev
    ```
 4. The frontend runs on `http://localhost:5173`
-# Environment Variables for YouTube Video Fetcher
-
-# Add your YouTube API keys (comma-separated for multiple keys)
+## Environment Variables for YouTube Video Fetcher
+```sh
+ Add your YouTube API keys (comma-separated for multiple keys)
 YOUTUBE_API_KEYS=YOUR_YOUTUBE_API_KEY_1,YOUR_YOUTUBE_API_KEY_2,YOUR_YOUTUBE_API_KEY_3
 
 #  MongoDB Connection URI
@@ -53,7 +53,7 @@ SEARCH_QUERY=technology
 
 # Server Port
 PORT=3000
-
+```
 ## API Endpoints
 - `GET /api/videos?page=1&limit=10&search=keyword` - Fetch paginated videos
 - WebSocket event `new_video` - Receives real-time new video updates
