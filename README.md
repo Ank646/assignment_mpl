@@ -4,7 +4,8 @@
 - Fetch latest videos from the backend
 - Pagination for video listing (8 per page)
 - Real-time updates for new videos using WebSockets
-- Regular API fetching after a given interval
+- Regular API fetching after a given interval.
+- Inbuilt video player
 - Simple and user-friendly interface
 
 
@@ -40,7 +41,7 @@
    npm run dev
    ```
 4. The frontend runs on `http://localhost:5173`
-## Environment Variables for YouTube Video Fetcher
+## Environment Variables for YouTube Video Fetcher add .env file in server folder
 ```sh
  Add your YouTube API keys (comma-separated for multiple keys)
 YOUTUBE_API_KEYS=YOUR_YOUTUBE_API_KEY_1,YOUR_YOUTUBE_API_KEY_2,YOUR_YOUTUBE_API_KEY_3
