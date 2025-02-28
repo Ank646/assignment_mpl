@@ -4,7 +4,7 @@
 - Fetch latest videos from the backend
 - Pagination for video listing (8 per page)
 - Real-time updates for new videos using WebSockets
-- Advanced Searchbar(Debounce)
+- Regular API fetching after a given interval
 - Simple and user-friendly interface
 
 
