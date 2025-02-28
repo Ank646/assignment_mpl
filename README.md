@@ -40,6 +40,19 @@
    npm run dev
    ```
 4. The frontend runs on `http://localhost:5173`
+# Environment Variables for YouTube Video Fetcher
+
+# Add your YouTube API keys (comma-separated for multiple keys)
+YOUTUBE_API_KEYS=YOUR_YOUTUBE_API_KEY_1,YOUR_YOUTUBE_API_KEY_2,YOUR_YOUTUBE_API_KEY_3
+
+#  MongoDB Connection URI
+MONGODB_URI=mongodb://localhost:27017/your_database_name
+
+# Search Query (default: "technology")
+SEARCH_QUERY=technology
+
+# Server Port
+PORT=3000
 
 ## API Endpoints
 - `GET /api/videos?page=1&limit=10&search=keyword` - Fetch paginated videos
